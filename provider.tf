@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      Version = "~>3.27"
+      version = "~>3.27"
     }
   }
 
@@ -11,12 +11,11 @@ terraform {
     backend "s3" {
     bucket = "terraform-backend-for-gha"
     key    = "[key-for-s3-terraform-gha"
-    region = "east-us-1"
+    region = "us-east-1"
     }
 
 }
 
 provider "aws" {
-  version = "~>3.0"
-  region  = "east-us-1"
+  region  = "us-east-1"
 }

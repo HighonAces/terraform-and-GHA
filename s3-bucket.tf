@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3Bucket" {
-     bucket = "[BUCKET_NAME_HERE]"
+     bucket = "sample-s3-for-terraform-test"
      acl       = "public-read"
 
      policy  = <<EOF
